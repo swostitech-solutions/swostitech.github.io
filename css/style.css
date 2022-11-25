@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+ html{
+   scroll-behavior: smooth;
+ }
+
+ .logo{
+   position:absolute;
+   left:0;
+   top:0;
+  
+ }
+
+
+ .logo img{
+   width: 50%;
+    
+ }
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    flex-direction: column;
+   
+}
+    
+ .nav-list{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .nav-list li{
+    color: blue;
+      list-style: none;
+      padding: 25px 25px;
+ }
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-list li a:hover{
+    color:blue;
+}
+
+
+
+.background{
+    background: rgba(0, 0, 0, 0.7)url('../img/background.jpg');
+    background-size: cover;
+    background-blend-mode:darken;
+
+}
+.firstsection{
+    height: 80vh ;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+}
+
+ 
+ .text-big{
+    font-size: 35px;
+    justify-content: center;
+    display: flex;
+    line-height: 2.8;
+   
+
+ }
+ .text-small{
+    font-size: 15px;
+    justify-content: center;
+    line-height: 1.5;
+
+
+
+ }
+ .btn{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+ }
+ .btn-sm{
+    padding:3px 10px;
+    vertical-align:middle;
+    font-size: 16px;
+ }
+ .btn-dark{
+   
+   color: black;
+            border: 2px solid black;
+ }
+ .section{
+   background-color: lightblue;
+   padding: 25px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+   
+ }
+
+ .imagefluid{
+   width:90%;
+   height: 411px;
+ }
+ .section-left{
+   background-color:lightgrey;
+   padding: 25px 70px;
+   height: 700px;
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: space-evenly;
+   max-width: 100%;
+   margin: auto;
+  
+}
+
+ .paras{
+   padding: 0px 65px;
+   line-height: 1.4;
+ }
+ .sectiontag{
+   padding: 16px 0px;
+ }
+.sectionsubtag{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .contact{
+   display:flex;
+  justify-content: center;
+   background-color:rgb(92, 109, 128);
+   height: auto;
+ }
+ .text-center{
+
+   text-align: center;
+   padding top: 10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ .form{
+  background-color: lightgrey;
+   max-width: 500px;
+   margin:30px auto;
+ }
+ .form-input{
+   margin: 25px 0px;
+   padding : 7px 3px;
+   width: 70%;
+   font-size: 12px;
+   border: 1px solid grey;
+   border-radius: 6px;
+ }
+
+ .text-footer{
+   text-align: center;
+   padding : 10px  10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background:black;
+ color: white;
+
+ }
+ .corporate{
+   height: 30%;
+   width: 70%;
+ }
+
+ .webdev{
+   height: 30%;
+   width: 70%;
+ }
+ 
+ .recruitment{
+   height: 70%;
+   width: 60%;
+ }
+
+ .burger{
+   display: none;
+   position: absolute;
+   cursor: pointer;
+   right: 5%;
+   top: 15px;
+ }
+
+ .line{
+   width: 33px;
+   background-color: white;
+   height: 4px;
+   margin: 5px 3px;
+ }
+
+ 
+ @media only screen and (max-width:1140px){
+   .nav-list{
+      flex-direction:column;
+   }
+   .navbar{
+      flex-direction: column;
+      transition: all 0.7s ease-in-out;
+      height: 447px;
+   }
+   .burger{
+      display: block;
+   }
+
+   .h-nav-resp{
+      height: 72px;
+   }
+   .v-class-resp{
+      opacity: 0;
+   }
+   .section{
+      flex-direction: column;
+   }
+
+   .text-small{
+      text-align: center;
+   }
+   .text-big{
+      text-align: center;
+   }
+
+   .paras{
+      padding: 0;
+   }
+  
+
+ 
+ }
