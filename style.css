@@ -74,7 +74,7 @@ html{
 .content{
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 61%;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
@@ -303,8 +303,7 @@ margin-bottom: 10px;
 
     .nav-list{
         flex-direction: column;
-        justify-content: space-between;
-   
+       
     }
 
     .navbar{
