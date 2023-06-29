@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- fav icon -->
+<link href="img/favicon1.png" rel="icon">
+<link href="img/favicon1.png" rel="apple-touch-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/s1.css"> -->
+
+    <title>Swostitech Solutions</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        .services-list .service-item {
+  position: relative;
+}
+
+.services-list .service-item .icon i {
+  font-size: 32px;
+  line-height: 0;
+  margin-right: 20px;
+  color: #38618e;
+}
+
+.services-list .service-item .title {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.services-list .service-item .title a {
+  color: var(--color-secondary);
+}
+
+.services-list .service-item .title a:hover {
+  color: #38618e;
+}
+
+.services-list .service-item .description {
+  line-height: 24px;
+  font-size: 14px;
+}
+a:hover {
+  color: #82cbed;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+section {
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-header h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-header p {
+  margin-bottom: 0;
+}
+body {
+  background: #212534;
+  color: white;
+}
+.container {
+  font-family: Arial, 'Times New Roman', Times, serif;
+  line-height: 1.5em;
+  margin: 0 10%;
+}
+.card {
+    display: table;
+    position: relative;
+    height: 450px;
+    width: 50%;
+    max-width: 300px;
+    background-color: rgb(57, 52, 52);
+    color:white;
+    margin: auto;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.card::after { /*adds an rgb background behind the card*/
+    --neg-border-width: -5px;
+    position: absolute;
+    top: var(--neg-border-width); bottom: var(--neg-border-width);
+    left: var(--neg-border-width); right: var(--neg-border-width);
+    background: linear-gradient(60deg, red, orange, blue, indigo, violet);
+    content: ''; /*this is important*/
+    z-index: -1;
+    border-radius: 25px;
+    box-shadow: 0px 0px 100px 2px red;
+    animation: rgb 4s infinite;
+    transition: 1s;
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+}
+.wrapper {
+    transition: 1s;
+    margin: 20px auto;
+}
+.wrapper:hover {
+    scale: 1.1;
+    margin-top: 70px;
+    margin-bottom: 150px;
+}
+.card:hover::after{
+    animation: rgb 4s infinite, rotate-bg 2s infinite;
+    rotate: 15deg;
+}
+
+@keyframes rotate-bg{
+    0% {
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes rgb {
+    0% {box-shadow: 0px 0px 100px 2px red;}
+    20% {box-shadow: 0px 0px 100px 2px orange;}
+    40% {box-shadow: 0px 0px 100px 2px blue;}
+    60% {box-shadow: 0px 0px 100px 2px indigo;}
+    80% {box-shadow: 0px 0px 100px 2px violet;}
+}
+
+.vertically-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+</style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+    
+
+    <!-- TOP NAV -->
+    <div class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <p> <i class='bx bxs-envelope'></i> info@swostitechnologies.com</p>
+                    <p> <i class='bx bxs-phone-call'></i>8595321714</p>
+                </div>
+                <div class="col-auto social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100093429827794&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com/swostitech91221"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://instagram.com/swostitechsolutions?igshid=MzRlODBiNWFlZA=="><i class='bx bxl-instagram'></i></a>
+                     <a href="https://www.linkedin.com/company/swostitech-solutions/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light  ">
+        <div class="container">
+            <a class="navbar-brand topleft" href="#"><img src="./img/logo_sts_latest1.png" S alt="logo" height="80px" width="95px" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Portfolio</a>
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Blog</a>
+                    </li>
+                </ul>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-brand ms-lg-3">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+
+      <div class="wrapper">
+              <div class="card">
+                  <div class="vertically-center" style="padding: 10px;">
+                      <p style="font-variant: small-caps; line-height: 1.5em; width: 75%; margin: auto;">
+                          At Swostitech Solution, We  handled a wide range of industries serving their business needs in outsourced product development. 
+                           
+                          We work with companies from a wide range of vertical industries serving both B2B and B2C.
+                           We have worked with early-stage startup founders and innovation decision makers of large enterprises to develop web and mobile app products that scaled to millions of users, and raise funding.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          
+      <p>.</p>
+      </div>
+      
+
+
+    <!-- differnt testing -->
+     <section id="services-list" class="services-list">
+            <div class="container" data-aos="fade-up">
+      
+              <div class="section-header">
+                <h2>Product Development By Swostitech Solution</h2>
+             </div><br><br>
+      
+              <div class="row gy-5">
+      
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon flex-shrink-0"><i class="bx bx-cart" style="color: #f57813;"></i></div>
+                  <div>
+                    <h4 class="title"><a href="#" class="stretched-link" >E-COMMERCE </a></h4>
+                    <p class="description">
+
+                      We've built custom e-commerce web and mobile apps for some of the leading FMCG companies like Dhathri, Nattukada etc.
+
+                     </p>
+                  </div>
+                </div>
+                <!-- End Service Item -->
+      
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon flex-shrink-0"><i class="bx bxs-book-reader" style="color: #15a04a;"></i></div>
+                  <div>
+                    <h4 class="title"><a href="#" class="stretched-link"> EDUCATION</a></h4>
+                    <p class="description">
+                      We've helped startups develop e-learning apps with awesome features like interactive exercises, videos and speech recognition.
+                        </p>
+                  </div>
+                </div><!-- End Service Item -->
+      
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon flex-shrink-0"><i class="bx bxs-store" style="color: #d90769;"></i></div>
+                  <div>
+                    <h4 class="title"><a href="#" class="stretched-link"> NON-PROFIT ORGANISATION</a></h4>
+                    <p class="description">
+                      We create the  dynamic website for non- profitable organisation to serve the people of the world.We are happy to help the people whoes presence defines easy and  simple life.
+                        
+                        </p>
+                  </div>
+                </div><!-- End Service Item -->
+      
+                <!-- <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <div class="icon flex-shrink-0"><i class="bi bi-tablet  " style="color: #15bfbc;"></i></div>
+                  <div>
+                    <h4 class="title"><a href="#" class="stretched-link">MOBILE TESTING </a></h4>
+                    <p class="description">
+                       
+                      
+                        Mobile devices are inarguably the most disruptive technology invention in recent times and have impacted human lives like no other. With the number of mobile devices surpassing the number of humans on earth, making your application mobile-ready is vital to keeping today’s digital consumers happy. Across enterprises of all sizes, mobile apps have fueled growth in business operations and customer services. .</p>
+                  </div>
+                </div> End Service Item
+      
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon flex-shrink-0"><i class="bi bi-file-earmark-easel"
+                     style="color: #aa57e5;"></i></div>
+                  <div>
+                    <h4 class="title"><a href="#" class="stretched-link">AI/ML TESTING</a></h4>
+                    <p class="description"> 
+                        In the world of artificial intelligence and machine learning, the need for reliable and accurate testing services has become increasingly important. Developing AI/ML applications is a complex and time-consuming process that requires rigorous testing to ensure the highest level of performance and functionality.</p>
+                  </div>
+                </div> End Service Item 
+      
+                <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                  <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #aae600;"></i></div>
+                  <div>
+                    <h4 class="title"><a href="#" class="stretched-link">IOT TESTING</a></h4>
+                    <p class="description">At Swostitech, we offer comprehensive testing services for IoT devices and applications. Any successful business must invest in IoT automation, penetration, and performance testing services to identify any defect before it reaches its end-consumer. In today’s era, almost every industry leverages the benefits of IoT; manufacturing, healthcare, transportations, energy and utilities are among them. </p>
+                  </div>
+                </div>End Service Item -->
+      
+              </div>
+      
+            </div>
+          </section>
+      
+      
+      
+      
+      
+      
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="align-content: right;">Top</button>
+
+
+    
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+   
+<script>
+    
+
+
+//Top button for scrolling  Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+
+</html>
