@@ -1,144 +1,148 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/s1.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/s1.css">
-    <title>Swostitech Solutions</title>
-    <style>
-body {
- background-image: url("img/banner.jpg");
- /* background-color: #cccccc; */
- background-repeat: no-repeat;
- margin-top: 20px;
-
- 
-
-}
-    </style>
-
+<title>Swostitech Solutions</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+.menu {
+  float: left;
+  width: 25%;
+  text-align: center;
+  height: 600px ;
+}
 
-    <!-- TOP NAV -->
-    <div class="top-nav" id="home">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-auto">
-                    <p> <i class='bx bxs-envelope'></i> info@swostitechnologies.com</p>
-                    <p> <i class='bx bxs-phone-call'></i>8595321714</p>
-                </div>
-                <div class="col-auto social-icons">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <a href="#"><i class='bx bxl-pinterest'></i></a>
-                </div>
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head> <!-- TOP NAV -->
+<div class="top-nav" id="home">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-auto">
+                <p> <i class='bx bxs-envelope'></i> info@swostitechnologies.com</p>
+                <p> <i class='bx bxs-phone-call'></i>8595321714</p>
+            </div>
+            <div class="col-auto social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100093429827794&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/swostitech91221"><i class='bx bxl-twitter'></i></a>
+                <a href="https://instagram.com/swostitechsolutions?igshid=MzRlODBiNWFlZA=="><i class='bx bxl-instagram'></i></a>
+                 <a href="https://www.linkedin.com/company/swostitech-solutions/"><i class='bx bxl-linkedin'></i></a>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- BOTTOM NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light  sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="./img/logo_sts_latest1.png" alt="logo" height="80px" width="95px" ></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Portfolio</a>
-                    </li>
-                    
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li>
-                </ul>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-brand ms-lg-3">Contact</a>
-            </div>
+<!-- BOTTOM NAV -->
+<nav class="navbar navbar-expand-lg navbar-light  ">
+    <div class="container">
+        <a class="navbar-brand topleft" href="#"><img src="./img/logo_sts_latest1.png" S alt="logo" height="80px" width="95px" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Portfolio</a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Blog</a>
+                </li>
+            </ul>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-brand ms-lg-3">Contact</a>
         </div>
-    </nav>
-
-
-
-
-
-<!-- image and link1 -->
-    
-       
-    
-    <!-- <div class="row">
-
-        <h2 style="justify-content: center;">Real Estate</h2>
-        <marquee width="60%" direction="left" height="100px">
-            <code>swostitechnologies</code>
-            </marquee>
-        <div class="col-lg-4 col-md-4 col-xs-4 thumb">
-            <a class="thumbnail" href="#">
-                <img class="img-responsive" src="img/r1.PNG" alt="">
-            </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-4 thumb">
-            <a class="thumbnail" href="#">
-                <img class="img-responsive" src="img/r2.PNG" alt="">
-            </a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-4 thumb">
-            <a class="thumbnail" href="#">
-                <img class="img-responsive" src="img/r3.PNG" alt="">
-            </a>
-        </div> -->
-        <div class="container">
-         <div class="row">
-          <div class="col-6">
-          <p style="text-align: left;">
-            Business is the practice of making one's living or making money by producing or buying and selling products (such as goods and services). It is also "any activity or enterprise entered into for profit."
-
-            Having a business name does not separate the business entity from the owner, which means that the owner of the business is responsible and liable for debts incurred by the business. If the business acquires debts, the creditors can go after the owner's personal possessions.A business structure does not allow for corporate tax rates. The proprietor is personally taxed on all income from the business.
-            
-            The term is also often used colloquially (but not by lawyers or by public officials) to refer to a company, such as a corporation or cooperative.
-            
-            Corporations, in contrast with sole proprietors and partnerships, are a separate legal entity and provide limited liability for their owners/members, as well as being subject to corporate tax rates. A corporation is more complicated and expensive to set up, but offers more protection and benefits for the owners/members.
-          </p>
-         <a href="https://www.swostitechnologies.com/"><button type="button" class="btn btn-info">VIEW WEBSITE</button></a> 
     </div>
-    <div class="col-6">
-        <img src="img/business.png" class="img-fluid" alt="..." >
+</nav>
+
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <h1>Corporate</h1>
+</div>
+
+<div style="overflow:auto">
+   <div class="menu">
+    <!-- <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a> -->
+    <img src="img/corporate.png" height="500" width="50%" alt="ecomm">
+  </div> 
+  
+  
+
+  <div class="main">
+    <h2>There is no secrets of Success!!!</h2>
+    <p> Business is the practice of making one's living or making money by producing or buying and selling products (such as goods and services).It is also "any activity or enterprise entered into for profit.<br><br>
+
+      Having a business name does not separate the business entity from the owner, which means that the owner of the business is responsible and liable for debts incurred by the business. If the business acquires debts, the creditors can go after the owner's personal possessions.A business structure does not allow for corporate tax rates. The proprietor is personally taxed on all income from the business.
+      <br><br>
+      The term is also often used colloquially (but not by lawyers or public officials) to refer to a company, such as a corporation or cooperative.
+      
+      Corporations, in contrast with sole proprietors and partnerships, are a separate legal entity and provide limited liability for their owners/members, as well as being subject to corporate tax rates. A corporation is more complicated and expensive to set up, but offers more protection and benefits for the owners/members..</p>
   </div>
-    </div> 
-    </div>
-        
 
-     
+  <div class="right">
+    <h2> Must Check!!!</h2>
+    <a href="https://www.swostitechnologies.com/"><button type="button" class="btn btn-info">VIEW WEBSITE</button></a>
+  </div>
+</div>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/app.js"></script>
+
 </body>
-
 </html>
+

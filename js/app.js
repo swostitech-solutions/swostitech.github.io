@@ -57,3 +57,9 @@ $(document).ready(function () {
 $('.flip').hover(function(){
     $(this).find('.card').toggleClass('flipped');
 });
+
+var closeButton = document.querySelector('.close-button');
+var callout = document.querySelector('.callout');
+closeButton.addEventListener('click', function() {
+  callout.style.display = 'none';
+});

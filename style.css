@@ -16,6 +16,7 @@ html{
     background-size: cover;
     background-position: center;
 }
+/* navbar */
 .navbar{
     width: 85%;
     margin: auto;
@@ -630,6 +631,7 @@ padding: 15px;
     color: #ffffff;
     padding-left: 20px; 
 }
+/* top button */
 #myBtn {
     display: none;
     position: fixed;
@@ -639,7 +641,7 @@ padding: 15px;
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgb(9, 33, 188);
+    background-color: rgb(9, 107, 188);
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -648,3 +650,4 @@ padding: 15px;
   #myBtn:hover {
     background-color: #555;
   }
+ 
