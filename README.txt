@@ -1,28 +1,6 @@
-# Prixima
-A Bootstrap multipurpose template
+Thanks for downloading this template!
 
-# Demo
-- https://prixima.netlify.app/
-
-# Clone Project
-- https://github.com/SA7MAN/Prixima
-
-# Features
-- Fully Responsive
-- Mobile Navigations
-- Animated elements on scroll
-- Smooth scrolling in each section.
-- Sticky Navigation on scrolling
-- and more ..
-
-
-# Credit
-- https://fonts.google.com/
-- https://line-awesome.com/
-- https://unsplash.com/
-- https://michalsnik.github.io/aos/
-
-
-# Watch more
-For more videos visit to my YouTube channel. [SA7MAN](https://www.youtube.com/c/SA7MAN)
-
+Template Name: Mamba
+Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
+Author: BootstrapMade.com
+License: https://bootstrapmade.com/license/
