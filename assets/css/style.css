@@ -1438,4 +1438,9 @@ section {
 .mobile-nav-toggle{
   color: #428bca;
 }
-
+li::marker{
+  list-style: none;
+}
+ol{
+  list-style-type: none;
+}
