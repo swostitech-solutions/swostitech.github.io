@@ -1,6 +1,6 @@
-Thanks for downloading this template!
+Thanks for reading this template!
 
-Template Name: Mamba
+Project  Name: Swostitech
 Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
 Author: BootstrapMade.com
 License: https://bootstrapmade.com/license/
