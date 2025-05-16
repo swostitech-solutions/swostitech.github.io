@@ -1,0 +1,90 @@
+.blog-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-right: 15px; /* <-- Adds space from right side */
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px 12px 0 0;
+  transition: all ease-in-out 0.4s;
+}
+.blog-image:hover img {
+  transform: scale(1.1);
+}
+
+.blog-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.95) 80%,
+    transparent
+  );
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  border-radius: 0 0 12px 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.blog-content h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+.blog-content button {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  margin-top: 5px;
+}
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: #333;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #479ee3;
+}
+
+.read-more::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 45%;
+  height: 2px;
+  background-color: #479ee3;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.read-more:hover::after {
+  opacity: 1;
+}

@@ -1,0 +1,99 @@
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+.navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 6px;
+  background: #fff;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.navbar-nav .nav-link:hover::after {
+  width: 40px; /* fixed length underline */
+}
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #1e1e1e !important;
+  border: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  width: 270px !important;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Dropdown item */
+.dropdown-item {
+  color: white !important;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  white-space: normal !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: block;
+  width: 100% !important;
+  line-height: 1.5;
+}
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+  background-color: #479ee3 !important;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.navbar-nav .nav-link.active {
+  color: #252426 !important;
+}
+.navbar-brand img.logo {
+  height: 45px;
+  width: 60px;
+  transition: transform 0.3s;
+}
+.navbar-brand img.logo:hover {
+  transform: scale(1.1);
+}
+
+
+/* Mobile nav toggle icon color */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Fix for dropdown arrow placement next to text */
+#products-dropdown > a::after {
+  display: inline-block;
+  margin-left: 0.4em;
+  vertical-align: middle;
+  border-top: 0.4em solid;
+  border-right: 0.4em solid transparent;
+  border-left: 0.4em solid transparent;
+  content: "";
+}
+/* Hide dropdown caret icon next to Products */
+#products-dropdown .dropdown-toggle::after {
+  display: none !important;
+}
+
+
+.custom-demo-button {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+button.custom-demo-button:hover {
+  background-color: #f348b9 !important;
+  color: white !important;
+  border-color: #f348b9 !important;
+}
+

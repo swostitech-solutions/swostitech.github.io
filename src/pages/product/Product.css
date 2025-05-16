@@ -1,0 +1,145 @@
+.hrms-card {
+ text-align: center;
+  box-shadow: rgb(255, 252, 245) -2px -2px 8px,
+    rgba(255, 252, 245, 0.6) -10px -10px 30px, rgb(209, 207, 201) 2px 2px 4px,
+    rgba(209, 207, 201, 0.6) 10px 10px 30px;
+  background: rgb(232, 230, 223);
+
+  border-radius: 30px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.custom-list li::before {
+  content: "✔️"; 
+  color: blue;
+  margin-right: 8px;
+}
+
+.hrms-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  background-color: #479EE3;
+  color: #fff;
+}
+@keyframes flipUpImage {
+  from {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+.flip-up-image {
+  animation: flipUpImage 0.9s ease-out;
+}
+@keyframes zoomInImage {
+  from {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in-image {
+  animation: zoomInImage 0.9s ease-out;
+}
+
+.Card.Text {
+  font-family: "Roboto", sans-serif;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 0.9s ease-out;
+}
+@keyframes fadeUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.9s ease-out;
+}
+
+.about-image-grid {
+  position: relative;
+  height: 540px;
+  margin: 0 2rem;
+}
+
+.img-grid-main {
+  width: 90%;
+  height: 72%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border: 9px solid rgb(172, 179, 197);
+}
+
+.img-grid-secondary {
+  position: absolute;
+  top: 30%;
+  left: -3%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 6px solid rgb(172, 179, 197);
+}
+
+.img-grid-tertiary {
+  position: absolute;
+  bottom: 30%;
+  right: -9%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 6px solid rgb(172, 179, 197);
+}
+
+.custom-list-item {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  
+}
+
+.custom-list-item::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: #007bff; /* Bootstrap blue */
+  font-weight: bold;
+}
+
+
+
+

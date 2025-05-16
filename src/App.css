@@ -1,0 +1,59 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden;  */
+}
+
+p {
+  /* font-family: 'Jost', sans-serif; */
+  /* font-family: "Poppins", sans-serif !important; */
+  font-family: 'Roboto', sans-serif;
+
+  text-align: justify;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: 'Jost', sans-serif; */
+  /* font-family: "Poppins", sans-serif !important; */
+  font-family: 'Roboto', sans-serif;
+
+}
+.Card.Title {
+ font-family: 'Roboto', sans-serif;
+
+}
+
+/* Card hover effect */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Zoom-in effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.1); /* Slight zoom-in for image */
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding-bottom: 50px; /* To avoid overlap with footer */
+  }
+}
+

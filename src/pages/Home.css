@@ -1,0 +1,184 @@
+.home-container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent !important;
+  position: relative;
+  z-index: 0;
+}
+.banner-overlay h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600;
+}
+@keyframes zoomInText {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.banner-overlay p {
+  animation: zoomInText 1s ease-out;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.banner-overlay h1 {
+  animation: fadeInDown 3s ease-out;
+}
+.banner-slide {
+  position: relative;
+}
+.banner-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+}
+.banner-overlay {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+  z-index: 10;
+  max-width: 50%;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 15px;
+}
+
+.prev {
+  left: 15px;
+}
+.info-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  /* border-radius: 10px; */
+  /* border: 1px solid #000; */
+}
+
+.info-card-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  position: relative;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  z-index: 1;
+  flex: 0 0 55%;
+}
+.text-content {
+  padding: 10px 20px;
+}
+.zoom-in {
+  animation: zoomInText 0.8s ease-out;
+}
+
+.info-card-text::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #479ee3;
+  transition: top 0.4s ease-in-out;
+  z-index: 0;
+}
+
+.info-card-text h3,
+.info-card-text p {
+  position: relative;
+  z-index: 1;
+  color: #000;
+  transition: color 0.4s ease-in-out;
+}
+
+.info-card:hover .info-card-text::before {
+  top: 0;
+}
+
+.info-card:hover .info-card-text h3,
+.info-card:hover .info-card-text p {
+  color: #fff;
+}
+
+.info-card-img {
+  max-height: 200px;
+  overflow: hidden;
+  flex: 0 0 45%;
+}
+
+.info-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.clients-heading {
+  position: relative;
+  color: #479ee3;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.clients-heading::before,
+.clients-heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 0.1px;
+  background-color: #444;
+}
+
+.clients-heading::before {
+  left: 0;
+}
+
+.clients-heading::after {
+  right: 0;
+}
